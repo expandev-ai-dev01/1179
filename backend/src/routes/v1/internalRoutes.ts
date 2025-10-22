@@ -9,10 +9,11 @@
  */
 
 import { Router } from 'express';
+import * as bankController from '@/api/v1/internal/bank/controller';
 
 const router = Router();
 
-// Internal routes will be added here by feature implementations
-// Example: router.use('/bank', bankRoutes);
+// Bank routes
+router.post('/bank', bankController.postHandler);
 
 export default router;

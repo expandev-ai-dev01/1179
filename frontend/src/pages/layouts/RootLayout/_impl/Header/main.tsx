@@ -20,6 +20,9 @@ export const Header = () => {
             <Link to="/" className="text-gray-600 hover:text-gray-900 transition-colors">
               Início
             </Link>
+            <Link to="/banks/new" className="text-gray-600 hover:text-gray-900 transition-colors">
+              Novo Banco
+            </Link>
           </nav>
         </div>
       </div>

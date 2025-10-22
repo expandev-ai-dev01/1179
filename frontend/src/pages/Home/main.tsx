@@ -6,7 +6,12 @@
  * @category public
  */
 
+import { useNavigate } from 'react-router-dom';
+import { Button } from '@/core/components/Button';
+
 export const HomePage = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="flex min-h-[calc(100vh-12rem)] items-center justify-center">
       <div className="text-center">
@@ -15,9 +20,9 @@ export const HomePage = () => {
           Gerencie os dados básicos dos bancos do sistema financeiro brasileiro
         </p>
         <div className="flex justify-center gap-4">
-          <button className="rounded-md bg-blue-600 px-6 py-3 text-white hover:bg-blue-700 transition-colors">
-            Começar
-          </button>
+          <Button onClick={() => navigate('/banks/new')} variant="primary">
+            Cadastrar Novo Banco
+          </Button>
         </div>
       </div>
     </div>

@@ -8,4 +8,4 @@
  * Centralizes all business logic service exports
  */
 
-// Services will be added here by feature implementations
+export * from './bank';
